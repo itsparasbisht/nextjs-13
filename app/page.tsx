@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <h1>hello</h1>
-      <Link href="/about">Go to about</Link>
+      <Link href="/users">Go to users</Link>
     </main>
   );
 }
