@@ -9,6 +9,15 @@ type Params = {
   };
 };
 
+export async function generateMetaData({ params: { userId } }: Params) {
+  const userData: Promise<User> = getUser(userId);
+  const user: User = await userData;
+
+  return {
+    title: user.name,
+  };
+}
+
 export default async function UserPage({ params: { userId } }: Params) {
   const userData: Promise<User> = getUser(userId);
   const userPostsData: Promise<Post[]> = getUserPosts(userId);
