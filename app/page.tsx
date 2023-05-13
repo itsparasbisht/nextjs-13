@@ -1,11 +1,16 @@
 import Link from "next/link";
-import styles from "./page.module.css";
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <main className={styles.main}>
-      <h1>hello</h1>
-      <Link href="/users">Go to users</Link>
-    </main>
+    <div>
+      <h1>welcome</h1>
+      <ul>
+        <li>
+          <Link href={"/about"}>About</Link>
+        </li>
+      </ul>
+    </div>
   );
-}
+};
+
+export default HomePage;
