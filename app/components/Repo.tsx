@@ -7,9 +7,15 @@ type RepoType = {
 
 async function fetchRepo(name: string) {
   const response = await fetch(
-    `https://api.github.com/repos/itsparasbisht/${name}`
+    `https://api.github.com/repos/itsparasbisht/${name}`,
+    {
+      next: {
+        revalidate: 10,
+      },
+    }
   );
   const repo = await response.json();
+  console.log("opop");
   return repo;
 }
 
