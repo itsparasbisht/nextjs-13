@@ -7,8 +7,7 @@ const AboutPage = () => {
         atque similique animi quo quaerat nesciunt laborum doloremque, magnam
         laboriosam amet. Asperiores consequuntur neque nam repudiandae quas ea,
         nostrum nobis, veritatis porro sequi deleniti, rerum minima vitae!
-        Dignissimos optio magni eligendi voluptatum corporis pariatur sequi
-        repudiandae unde, debitis maiores et.
+        Dignissimos optio magni.
       </p>
     </div>
   );
