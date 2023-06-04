@@ -15,7 +15,6 @@ async function fetchRepo(name: string) {
     }
   );
   const repo = await response.json();
-  console.log("opop");
   return repo;
 }
 
