@@ -6,7 +6,7 @@ async function fetchRepos() {
     "https://api.github.com/users/itsparasbisht/repos",
     {
       next: {
-        revalidate: 10,
+        revalidate: 30,
       },
     }
   );
